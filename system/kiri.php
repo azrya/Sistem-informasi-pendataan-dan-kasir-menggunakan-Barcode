@@ -176,7 +176,8 @@ elseif ($_GET[module]=='semuaproduk'){
 				}
 		  echo "<td class='data' width='35px'>
 				<center>
-				<a href='aksi.php?module=keranjang&act=tambah&id=$r[kode_produk]&stat=$_GET[stat]&cust=$_GET[cust]'><img src='../mos-css/img/oke.png'></a>&nbsp;
+				<a href='aksi.php?module=keranjang&act=tambah&id=$r[kode_produk]&stat=1&cust=$_GET[cust]'><img src='../mos-css/img/ecer3.png'></a>&nbsp;
+				<a href='aksi.php?module=keranjang&act=tambah&id=$r[kode_produk]&stat=2&cust=$_GET[cust]'><img src='../mos-css/img/grosir5.jpg'></a>&nbsp;
 				</center>
 				</td>
 			</tr>";
@@ -372,7 +373,8 @@ elseif ($_GET[module]=='semuacostumer'){
 				<td class='data'>$r[alamat_lengkap]</td>
 				<td class='data'>$cek[total] Kali</td>
 				<td valign=top><center>
-					<a href='media.php?module=keranjangbelanja&stat=1&cust=$r[id_costumer]'><img src='../mos-css/img/oke.png'></a>&nbsp;";
+					<a href='media.php?module=keranjangbelanja&stat=1&cust=$r[id_costumer]'><img src='../mos-css/img/ecer3.png'></a>&nbsp;
+					<a href='media.php?module=keranjangbelanja&stat=2&cust=$r[id_costumer]'><img src='../mos-css/img/grosir5.jpg'></a>&nbsp;";
 					if ($_SESSION[leveluser]=='Admin'){
 						echo "<a href='media.php?module=semuacostumer&custt=update&id=$r[id_costumer]'><img src='../mos-css/img/detail.png'></a>&nbsp; 
 							  <a href='media.php?module=semuacostumer&delete=$r[id_costumer]' style='color:red; font-weight:bold; '>X</a>&nbsp; ";

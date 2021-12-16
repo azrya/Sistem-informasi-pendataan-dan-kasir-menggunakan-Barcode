@@ -82,20 +82,24 @@
 		<li><a href="index.php">Dashboard</a></li>
 		<?php 
 			if ($_SESSION['leveluser'] == 'Admin'){
-				echo "<li><a href='kasir.'>Kasir</a></li>
-					  <li><a href='faktur.'>Barang Masuk</a></li>
-					  <li><a href='kategori.'>Kategori</a></li>
-					  <li><a href='supplier.'>Suppliers</a></li>
-					  <li><a href='semua-customer.'>Data Customer</a></li>
-					  <li><a href='laporan.'>Laporan</a></li>
-					 
+				echo "<li><a href='kasir.html'>Kasir</a></li>
+					  <li><a href='faktur.html'>Barang Masuk</a></li>
+					  <li><a href='kategori.html'>Kategori</a></li>
+					  <li><a href='supplier.html'>Suppliers</a></li>
+					  <li><a href='semua-customer.html'>Data Customer</a></li>
+					  <li><a href='return.html'>Return Produk</a></li>
+					  <li><a href='laporan.html'>Laporan</a></li>
+					  <li><a href='diagram.html'>Graf. Bulan</a></li>
+					  <li><a href='tahun-diagram.html'>Graf. Tahun</a></li>
+					  <li><a href='data-kategori-diagram.html'>Graf. Kategori</a></li>
 					  ";
 			}else{
-				echo "<li><a href='kasir.'>Kasir</a></li>
-					  <li><a href='keranjang-belanja-1.'>Transaksi Ecer</a></li>
-					  <li><a href='keranjang-belanja-2.'>Transaksi Grosir</a></li>
-					  <li><a href='semua-customer.'>Data Customer</a></li>
-					  <li><a href='status-pembelian.'>Laporan</a></li>";
+				echo "<li><a href='semua-produk.html'>Produk</a></li>
+					  <li><a href='keranjang-belanja-1.html'>Transaksi Ecer</a></li>
+					  <li><a href='keranjang-belanja-2.html'>Transaksi Grosir</a></li>
+					  <li><a href='semua-customer.html'>Data Customer</a></li>
+					  <li><a href='return.html'>Return Produk</a></li>
+					  <li><a href='status-pembelian.html'>Laporan</a></li>";
 			}
 			
 		?>

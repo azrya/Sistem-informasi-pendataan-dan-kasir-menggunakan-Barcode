@@ -43,7 +43,7 @@ if ($cocok > 0){
 	$_SESSION[kota]   	 	= $r[kota];
   	$_SESSION[leveluser]    = $r[level];
 
-	header('location:system/home');
+	header('location:system/semua-produk.html');
 	}
 else {
 echo "<script>window.alert('Username dan Password anda salah atau account anda belum di aktifkan.');
